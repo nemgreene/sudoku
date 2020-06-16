@@ -44,7 +44,6 @@
 }
 .col {
   width: 100px;
-  opacity: 50%;
 }
 /* ----------------------------Popped----------------------------- */
 
@@ -55,6 +54,7 @@
   width: 65vh;
   height: 65vh;
   font-size: 2.78vh;
+  opacity: 1;
 }
 .poppedTableOffset {
   margin-left: -12%;
@@ -91,7 +91,7 @@
   margin-top: -10%;
   height: 70%;
   width: 70%;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .Layer3 {
@@ -139,7 +139,7 @@
 }
 
 .activeLayer {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .numHeaderCol {
