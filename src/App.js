@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-grid-system";
-/* import Popped from "./popped"; */
+import Popped from "./popped";
 import "./App.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -294,8 +294,7 @@ function App() {
     <div className="App-body">
       <div className="App">
         {poppedOverlay ? (
-          /*  <Popped changeOverlay={changeOverlay} /> */
-          "Popped"
+          <Popped changeOverlay={changeOverlay} />
         ) : (
           <div className="UI">
             <div className="narration">{narration}</div>
@@ -342,11 +341,7 @@ function App() {
               >
                 solveIt
               </button>
-              <button
-                onClick={/* () => changeOverlay() */ console.log("clicked")}
-              >
-                Pop The Hood
-              </button>
+              <button onClick={() => changeOverlay()}>Pop The Hood</button>
             </div>
           </div>
         )}
